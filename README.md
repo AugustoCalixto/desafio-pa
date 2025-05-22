@@ -12,6 +12,7 @@ Este projeto contém três scripts em TypeScript que consomem a API do The Movie
    ```bash
    npm install
    ```
+3. Crie um arquivo .env seguindo o modelo em .env.local e adicione sua api key
 
 ## Scripts Disponíveis
 
@@ -20,13 +21,13 @@ Este projeto contém três scripts em TypeScript que consomem a API do The Movie
   ```bash
   npm run script1
   ```
-  Salva os filmes populares e seus trailers em `results/movies.json`.
+  Salva os filmes populares e o link de seus trailers em `results/movies.json`.
 
 - **Filmes por Gênero (gêneros iniciados com "A")**
   ```bash
   npm run script2
   ```
-  Salva os filmes do terceiro gênero iniciado com "A" em `results/animation-movies.json`.
+  Busca todos os generos com a letra A e salva como resultado as informações dos filmes do genero animação ( esta estatico o retorno do terceiro elemento) `results/animation-movies.json`. 
 
 - **Filmes em Cartaz:**
   ```bash
@@ -48,10 +49,8 @@ Os arquivos gerados ficam na pasta `results/`:
 - `now-playing.json`: Filmes em cartaz
 
 ## Observações
-- O projeto já inclui uma chave de API TMDb para testes. Para uso em produção, utilize sua própria chave.
+- Voce precisa possuir uma chave de API TMDb para testes.
 - Os scripts usam `ts-node` para execução direta de arquivos TypeScript.
-
 ---
 
-Se tiver dúvidas ou quiser personalizar algum script, fique à vontade para abrir uma issue ou contribuir!
 # desafio-pa

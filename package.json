@@ -1,0 +1,29 @@
+{
+  "name": "streamline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "script1": "ts-node src/script1.ts",
+    "script2": "ts-node src/script2.ts",
+    "script3": "ts-node src/script3.ts",
+    "dev": "ts-node-dev --respawn src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^22.15.21",
+    "dotenv": "^16.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "node-fetch": "^3.3.2",
+    "ts-jest": "^29.3.4",
+    "ts-node-dev": "^2.0.0"
+  }
+}
